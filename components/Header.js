@@ -23,17 +23,27 @@ const Header = () => {
 				)}
 
 				<ul className={isNavOpen ? 'show' : ''}>
-					<li>Home</li>
-					<li>Products</li>
-					<li>About Us</li>
-					<li>Contact</li>
+					<li>
+						<a href='#hero' onClick={() => setIsNavOpen(false)}>
+							Home
+						</a>
+					</li>
+					<li>
+						<a href='#products' onClick={() => setIsNavOpen(false)}>
+							Products
+						</a>
+					</li>
+					<li>
+						<a href='#about-us' onClick={() => setIsNavOpen(false)}>
+							About Us
+						</a>
+					</li>
+					<li>
+						<a href='#contact' onClick={() => setIsNavOpen(false)}>
+							Contact
+						</a>
+					</li>
 				</ul>
-				{/* <ul className='small_nav'>
-					<li>Home</li>
-					<li>Products</li>
-					<li>About Us</li>
-					<li>Contact</li>
-				</ul> */}
 			</nav>
 		</header>
 	)
