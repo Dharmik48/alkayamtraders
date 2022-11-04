@@ -22,7 +22,7 @@ const Layout = ({ children }) => {
 					property='og:description'
 					content='Al Kayam Traders provides clients with the best services and high-quality marine products and has been trusted by satisfied clients worldwide for more than 5 years.'
 				/>
-				<meta property='og:image' content='../public/company.jpeg' />
+				<meta property='og:image' content='https://i.imgur.com/rMyN59p.jpg' />
 
 				{/* Twitter  */}
 				<meta property='twitter:card' content='summary_large_image' />
@@ -35,7 +35,10 @@ const Layout = ({ children }) => {
 					property='twitter:description'
 					content='Al Kayam Traders provides clients with the best services and high-quality marine products and has been trusted by satisfied clients worldwide for more than 5 years.'
 				/>
-				<meta property='twitter:image' content='../public/company.jpeg' />
+				<meta
+					property='twitter:image'
+					content='https://i.imgur.com/rMyN59p.jpg'
+				/>
 			</Head>
 			<Header />
 			{children}
