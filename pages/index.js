@@ -1,4 +1,6 @@
+import Image from 'next/image'
 import Link from 'next/link'
+import productImg from '../public/product.jpg'
 
 const Home = () => {
 	return (
@@ -16,9 +18,66 @@ const Home = () => {
 				<a href={'#products'} className='btn'>
 					Explore Products
 				</a>
-				<div className='hero_img'>
-					{/* <img src='/ship.jpg' alt='Cargo ship' /> */}
+				<div className='hero_img'></div>
+			</section>
+			<section className='products' id='products'>
+				<div className='section_heading'>
+					<h2 className='section_title'>Products</h2>
+					<p className='section_desc'>
+						Explore the variety of products we offer
+					</p>
 				</div>
+				<ul className='products_list'>
+					<li className='product'>
+						<Image src={productImg} />
+						<div>
+							<h3>Marine Engine</h3>
+							<Link href={'/'}>View More</Link>
+						</div>
+					</li>
+					<li className='product'>
+						<Image src={productImg} />
+						<div>
+							<h3>Marine Engine</h3>
+							<Link href={'/'}>View More</Link>
+						</div>
+					</li>
+					<li className='product'>
+						<Image src={productImg} />
+						<div>
+							<h3>Marine Engine</h3>
+							<Link href={'/'}>View More</Link>
+						</div>
+					</li>
+					<li className='product'>
+						<Image src={productImg} />
+						<div>
+							<h3>Marine Engine</h3>
+							<Link href={'/'}>View More</Link>
+						</div>
+					</li>
+					<li className='product'>
+						<Image src={productImg} />
+						<div>
+							<h3>Marine Engine</h3>
+							<Link href={'/'}>View More</Link>
+						</div>
+					</li>
+					<li className='product'>
+						<Image src={productImg} />
+						<div>
+							<h3>Marine Engine</h3>
+							<Link href={'/'}>View More</Link>
+						</div>
+					</li>
+					<li className='product'>
+						<Image src={productImg} />
+						<div>
+							<h3>Marine Engine</h3>
+							<Link href={'/'}>View More</Link>
+						</div>
+					</li>
+				</ul>
 			</section>
 		</>
 	)

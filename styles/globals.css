@@ -37,8 +37,8 @@ a {
 }
 
 img {
-	aspect-ratio: 1;
 	max-width: 100%;
+	height: auto;
 }
 
 section {
@@ -48,6 +48,12 @@ section {
 @media screen and (min-width: 768px) {
 	section {
 		padding: 5em 10%;
+	}
+}
+
+@media screen and (min-width: 1279px) {
+	section {
+		padding: 6em 10%;
 	}
 }
 
@@ -113,12 +119,12 @@ nav > ul {
 	isolation: isolate;
 	z-index: -1;
 	list-style: none;
-	box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.04);
 }
 
 nav > ul.show {
 	opacity: 1;
 	transform: translateY(0);
+	box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.04);
 }
 
 nav > ul {
@@ -177,6 +183,46 @@ nav > ul > li:hover {
 	}
 }
 
+.section_heading {
+	display: flex;
+	flex-direction: column;
+	gap: 0.75em;
+	margin-bottom: 3.5em;
+}
+
+.section_title {
+	font-size: 2rem;
+}
+
+.section_desc {
+	font-size: 0.85rem;
+}
+
+@media screen and (min-width: 768px) {
+	.section_title {
+		font-size: 2.5rem;
+	}
+
+	.section_desc {
+		font-size: 1rem;
+	}
+}
+
+@media screen and (min-width: 1279px) {
+	.section_heading {
+		gap: 1em;
+		margin-bottom: 4em;
+	}
+
+	.section_title {
+		font-size: 3rem;
+	}
+
+	.section_desc {
+		font-size: 1.15rem;
+	}
+}
+
 /* ---HERO--- */
 .hero {
 	position: relative;
@@ -186,6 +232,7 @@ nav > ul > li:hover {
 	text-align: center;
 	overflow: hidden;
 	max-height: 90vh;
+	border-bottom: 1px solid var(--clr-grey);
 }
 
 .hero > h1 {
@@ -284,5 +331,67 @@ nav > ul > li:hover {
 	.hero > .hero_img {
 		width: 50em;
 		translate: 17% 25%;
+	}
+}
+
+/* PRODUCTS */
+.products_list {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 2.25em;
+	list-style: none;
+}
+
+.products_list > .product {
+	overflow: hidden;
+}
+
+.products_list > .product > img {
+	border-radius: 0.75em;
+	width: 100%;
+}
+
+.product h3 {
+	font-family: var(--ff-poppins);
+	font-weight: 500;
+}
+
+.product a {
+	color: var(--clr-brand);
+	font-size: 0.85rem;
+	border-bottom: 2px solid transparent;
+	transition: border-color 150ms;
+}
+
+.product a:hover,
+.product a:focus {
+	border-color: 2px solid var(--clr-brand);
+}
+
+@media screen and (min-width: 612px) {
+	.products_list {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media screen and (min-width: 1080px) {
+	.products_list {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+@media screen and (min-width: 1279px) {
+	.product h3 {
+		font-size: 1.5rem;
+	}
+
+	.product a {
+		font-size: 1rem;
+	}
+}
+
+@media screen and (min-width: 1720px) {
+	.products_list {
+		gap: 4em;
 	}
 }
