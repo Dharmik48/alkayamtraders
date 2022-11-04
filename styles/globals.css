@@ -113,6 +113,7 @@ nav > ul {
 	isolation: isolate;
 	z-index: -1;
 	list-style: none;
+	box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.04);
 }
 
 nav > ul.show {
