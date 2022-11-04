@@ -1,6 +1,13 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import productImg from '../public/product.jpg'
+import {
+	FaPhoneAlt,
+	FaEnvelope,
+	FaMapMarkerAlt,
+	FaInstagram,
+	FaWhatsapp,
+} from 'react-icons/fa'
 
 const Home = () => {
 	return (
@@ -86,6 +93,54 @@ const Home = () => {
 					<p>
 						By choosing us you can be assured to get best services and products.
 					</p>
+				</div>
+			</section>
+			<section className='contact' id='contact'>
+				<div className='section_heading'>
+					<h3 className='section_title'>Contact Us</h3>
+					<p className='section_desc'>
+						Any question or remarks? Just write us a message!
+					</p>
+				</div>
+				<div className='details'>
+					<div className='details_heading'>
+						<h4>Contact Information</h4>
+						<p>Say something to start a live chat!</p>
+					</div>
+					<div className='info'>
+						<div className='contact_info'>
+							<div className='detail call'>
+								<FaPhoneAlt />
+								<p>
+									+919409701340
+									<br />
+									+919824786152
+								</p>
+							</div>
+							<div className='detail mail'>
+								<FaEnvelope />
+								<p>alkayamtraders92@gmail.com</p>
+							</div>
+							<div className='detail address'>
+								<FaMapMarkerAlt />
+								<p>
+									B-57 Rasheshyam complex, Waghawadi road, Bhavnagar-364001,
+									Gujarat.
+								</p>
+							</div>
+						</div>
+						<div className='socials'>
+							<Link
+								href='https://www.instagram.com/marinemarket_/'
+								target='_blank'
+							>
+								<FaInstagram />
+							</Link>
+							<Link href={'https://wa.me/919409701340'} target='_blank'>
+								<FaWhatsapp />
+							</Link>
+						</div>
+					</div>
 				</div>
 			</section>
 		</>
