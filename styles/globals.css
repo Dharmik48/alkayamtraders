@@ -293,7 +293,7 @@ nav > ul > li:hover {
 		width: 28em;
 		aspect-ratio: 1;
 		border-radius: 50%;
-		background-image: url('/ship.jpg');
+		background-image: url('/images/ship.jpg');
 		background-position: center;
 		background-size: cover;
 		overflow: hidden;
@@ -377,14 +377,17 @@ nav > ul > li:hover {
 }
 
 @media screen and (min-width: 612px) {
-	.products_list {
+	.products_list:not(.img_products) {
 		grid-template-columns: repeat(2, 1fr);
 	}
 }
 
 @media screen and (min-width: 1080px) {
-	.products_list {
+	.products_list:not(.img_products) {
 		grid-template-columns: repeat(3, 1fr);
+	}
+	.img_products {
+		grid-template-columns: repeat(2, 1fr);
 	}
 }
 
@@ -612,4 +615,14 @@ footer ul a:hover {
 	footer ul {
 		font-size: 1rem;
 	}
+}
+
+/* ---PRODUCTS PAGE--- */
+.img_products > .product {
+	background-color: transparent;
+}
+.img_products > li > img {
+	/* background-color: transparent; */
+	/* box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1); */
+	border: 1px solid var(--clr-grey);
 }

@@ -1,6 +1,9 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import productImg from '../public/product.jpg'
+// import fireImg from '../public/images/product.jpg'
+import fireImg from '../public/images/products/fire1.jpeg'
+import autoImg from '../public/images/products/auto2.jpeg'
+import engineeImg from '../public/images/products/engine1.jpeg'
 import {
 	FaPhoneAlt,
 	FaEnvelope,
@@ -36,38 +39,38 @@ const Home = () => {
 				</div>
 				<ul className='products_list'>
 					<li className='product'>
-						<Image src={productImg} />
+						<Image src={autoImg} />
 						<div>
 							<h3>Marine automation</h3>
-							<Link href={'/'}>View More</Link>
+							<Link href={'/products/automation'}>View More</Link>
 						</div>
 					</li>
 					<li className='product'>
-						<Image src={productImg} />
+						<Image src={fireImg} />
 						<div>
 							<h3>Marine fair & safety</h3>
-							<Link href={'/'}>View More</Link>
+							<Link href={'/products/fire-and-safety'}>View More</Link>
 						</div>
 					</li>
 					<li className='product'>
-						<Image src={productImg} />
+						<Image src={engineeImg} />
 						<div>
 							<h3>Marine engine and spare</h3>
-							<Link href={'/'}>View More</Link>
+							<Link href={'/products/engine'}>View More</Link>
 						</div>
 					</li>
 					<li className='product'>
-						<Image src={productImg} />
+						<Image src={fireImg} />
 						<div>
 							<h3>Marine pneumatic</h3>
-							<Link href={'/'}>View More</Link>
+							<Link href={'/products/pneumatic'}>View More</Link>
 						</div>
 					</li>
 					<li className='product'>
-						<Image src={productImg} />
+						<Image src={fireImg} />
 						<div>
 							<h3>Marine hydraulic pump & motor</h3>
-							<Link href={'/'}>View More</Link>
+							<Link href={'/products/pump-and-motor'}>View More</Link>
 						</div>
 					</li>
 				</ul>
