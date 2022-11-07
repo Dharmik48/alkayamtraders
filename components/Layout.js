@@ -39,6 +39,8 @@ const Layout = ({ children }) => {
 					property='twitter:image'
 					content='https://i.imgur.com/rMyN59p.jpg'
 				/>
+
+				<link rel='shortcut icon' href='/favicon.ico' />
 			</Head>
 			<Header />
 			{children}
