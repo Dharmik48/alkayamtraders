@@ -14,7 +14,7 @@ const FireAndSafety = () => {
 			</div>
 			<ul className='products_list img_products'>
 				<li className='product'>
-					<Image src={img1} />
+					<Image src={img1} alt='Engine and Spare' />
 				</li>
 			</ul>
 		</section>

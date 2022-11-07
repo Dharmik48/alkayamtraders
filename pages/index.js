@@ -39,35 +39,35 @@ const Home = () => {
 				</div>
 				<ul className='products_list'>
 					<li className='product'>
-						<Image src={autoImg} />
+						<Image src={autoImg} alt='Automation products' />
 						<div>
 							<h3>Marine automation</h3>
 							<Link href={'/products/automation'}>View More</Link>
 						</div>
 					</li>
 					<li className='product'>
-						<Image src={fireImg} />
+						<Image src={fireImg} alt='Fire and safety products' />
 						<div>
 							<h3>Marine fair & safety</h3>
 							<Link href={'/products/fire-and-safety'}>View More</Link>
 						</div>
 					</li>
 					<li className='product'>
-						<Image src={engineeImg} />
+						<Image src={engineeImg} alt='Engine products' />
 						<div>
 							<h3>Marine engine and spare</h3>
 							<Link href={'/products/engine'}>View More</Link>
 						</div>
 					</li>
 					<li className='product'>
-						<Image src={fireImg} />
+						<Image src={fireImg} alt='Pneumatic products' />
 						<div>
 							<h3>Marine pneumatic</h3>
 							<Link href={'/products/pneumatic'}>View More</Link>
 						</div>
 					</li>
 					<li className='product'>
-						<Image src={fireImg} />
+						<Image src={fireImg} alt='hydraulic pump and motors' />
 						<div>
 							<h3>Marine hydraulic pump & motor</h3>
 							<Link href={'/products/pump-and-motor'}>View More</Link>

@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { FaBars } from 'react-icons/fa'
 import { FaTimes } from 'react-icons/fa'
+import Link from 'next/link'
 
 const Header = () => {
 	const [isNavOpen, setIsNavOpen] = useState(false)
@@ -24,24 +25,24 @@ const Header = () => {
 
 				<ul className={isNavOpen ? 'show' : ''}>
 					<li>
-						<a href='/#hero' onClick={() => setIsNavOpen(false)}>
+						<Link href='/#hero' onClick={() => setIsNavOpen(false)}>
 							Home
-						</a>
+						</Link>
 					</li>
 					<li>
-						<a href='/#products' onClick={() => setIsNavOpen(false)}>
+						<Link href='/#products' onClick={() => setIsNavOpen(false)}>
 							Products
-						</a>
+						</Link>
 					</li>
 					<li>
-						<a href='/#about-us' onClick={() => setIsNavOpen(false)}>
+						<Link href='/#about-us' onClick={() => setIsNavOpen(false)}>
 							About Us
-						</a>
+						</Link>
 					</li>
 					<li>
-						<a href='/#contact' onClick={() => setIsNavOpen(false)}>
+						<Link href='/#contact' onClick={() => setIsNavOpen(false)}>
 							Contact
-						</a>
+						</Link>
 					</li>
 				</ul>
 			</nav>

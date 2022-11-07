@@ -14,10 +14,10 @@ const Automation = () => {
 			</div>
 			<ul className='products_list img_products'>
 				<li className='product'>
-					<Image src={img1} />
+					<Image src={img1} alt='Automation products' />
 				</li>
 				<li className='product'>
-					<Image src={img2} />
+					<Image src={img2} alt='Automation products' />
 				</li>
 			</ul>
 		</section>
