@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import img1 from '../../public/images/products/engine1.jpeg'
+import img2 from '../../public/images/products/engine2.jpeg'
 
 const FireAndSafety = () => {
 	return (
@@ -20,6 +21,9 @@ const FireAndSafety = () => {
 				<ul className='products_list img_products'>
 					<li className='product'>
 						<Image src={img1} alt='Engine and Spare' />
+					</li>
+					<li className='product'>
+						<Image src={img2} alt='Engine and Spare' />
 					</li>
 				</ul>
 			</section>

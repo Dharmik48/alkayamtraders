@@ -2,12 +2,41 @@ import { useState } from 'react'
 import { FaBars } from 'react-icons/fa'
 import { FaTimes } from 'react-icons/fa'
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 
 const Header = () => {
+	const links = [
+		{ text: 'Home', to: '#hero' },
+		{ text: 'Products', to: '#products' },
+		{ text: 'About Us', to: '#about-us' },
+		{ text: 'Contact', to: '#contact' },
+	]
+
 	const [isNavOpen, setIsNavOpen] = useState(false)
+
+	const router = useRouter()
 
 	const toggleMenu = () => {
 		setIsNavOpen(currIsNavOpen => !currIsNavOpen)
+	}
+
+	const renderLinks = () => {
+		if (router.route.includes('/products')) {
+			return links.map(link => (
+				<li key={link.text}>
+					<Link href={`/${link.to}`} onClick={() => setIsNavOpen(false)}>
+						{link.text}
+					</Link>
+				</li>
+			))
+		}
+		return links.map(link => (
+			<li key={link.text}>
+				<a href={link.to} onClick={() => setIsNavOpen(false)}>
+					{link.text}
+				</a>
+			</li>
+		))
 	}
 
 	return (
@@ -23,28 +52,7 @@ const Header = () => {
 					<FaBars className='menu' onClick={toggleMenu} />
 				)}
 
-				<ul className={isNavOpen ? 'show' : ''}>
-					<li>
-						<Link href='/#hero' onClick={() => setIsNavOpen(false)}>
-							Home
-						</Link>
-					</li>
-					<li>
-						<Link href='/#products' onClick={() => setIsNavOpen(false)}>
-							Products
-						</Link>
-					</li>
-					<li>
-						<Link href='/#about-us' onClick={() => setIsNavOpen(false)}>
-							About Us
-						</Link>
-					</li>
-					<li>
-						<Link href='/#contact' onClick={() => setIsNavOpen(false)}>
-							Contact
-						</Link>
-					</li>
-				</ul>
+				<ul className={isNavOpen ? 'show' : ''}>{renderLinks()}</ul>
 			</nav>
 		</header>
 	)

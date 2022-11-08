@@ -1,6 +1,31 @@
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa'
+import { useRouter } from 'next/router'
+import Link from 'next/link'
 
 const Footer = () => {
+	const router = useRouter()
+	const links = [
+		{ text: 'Home', to: '#hero' },
+		{ text: 'About Us', to: '#about-us' },
+		{ text: 'Products', to: '#products' },
+		{ text: 'Contact', to: '#contact' },
+	]
+
+	const renderLinks = () => {
+		if (router.route.includes('/products')) {
+			return links.map(link => (
+				<li key={link.text}>
+					<Link href={`/${link.to}`}>{link.text}</Link>
+				</li>
+			))
+		}
+		return links.map(link => (
+			<li key={link.text}>
+				<a href={link.to}>{link.text}</a>
+			</li>
+		))
+	}
+
 	return (
 		<footer>
 			<div className='heading'>
@@ -36,20 +61,7 @@ const Footer = () => {
 			</div>
 			<div className='company'>
 				<h5>Company</h5>
-				<ul>
-					<li>
-						<a href='#hero'>Home</a>
-					</li>
-					<li>
-						<a href='#about-us'>About Us</a>
-					</li>
-					<li>
-						<a href='#products'>Products</a>
-					</li>
-					<li>
-						<a href='#contact'>Contact Us</a>
-					</li>
-				</ul>
+				<ul>{renderLinks()}</ul>
 			</div>
 		</footer>
 	)

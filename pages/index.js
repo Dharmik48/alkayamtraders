@@ -1,9 +1,10 @@
 import Image from 'next/image'
 import Link from 'next/link'
-// import fireImg from '../public/images/product.jpg'
 import fireImg from '../public/images/products/fire1.jpeg'
 import autoImg from '../public/images/products/auto2.jpeg'
 import engineeImg from '../public/images/products/engine1.jpeg'
+import pneumaticImg from '../public/images/products/pneumatic1.jpeg'
+import hydraulicImg from '../public/images/products/hydraulic2.jpeg'
 import {
 	FaPhoneAlt,
 	FaEnvelope,
@@ -39,13 +40,6 @@ const Home = () => {
 				</div>
 				<ul className='products_list'>
 					<li className='product'>
-						<Image src={autoImg} alt='Automation products' />
-						<div>
-							<h3>Marine automation</h3>
-							<Link href={'/products/automation'}>View More</Link>
-						</div>
-					</li>
-					<li className='product'>
 						<Image src={fireImg} alt='Fire and safety products' />
 						<div>
 							<h3>Marine fair & safety</h3>
@@ -60,14 +54,21 @@ const Home = () => {
 						</div>
 					</li>
 					<li className='product'>
-						<Image src={fireImg} alt='Pneumatic products' />
+						<Image src={autoImg} alt='Automation products' />
+						<div>
+							<h3>Marine automation</h3>
+							<Link href={'/products/automation'}>View More</Link>
+						</div>
+					</li>
+					<li className='product'>
+						<Image src={pneumaticImg} alt='Pneumatic products' />
 						<div>
 							<h3>Marine pneumatic</h3>
 							<Link href={'/products/pneumatic'}>View More</Link>
 						</div>
 					</li>
 					<li className='product'>
-						<Image src={fireImg} alt='hydraulic pump and motors' />
+						<Image src={hydraulicImg} alt='hydraulic pump and motors' />
 						<div>
 							<h3>Marine hydraulic pump & motor</h3>
 							<Link href={'/products/pump-and-motor'}>View More</Link>
@@ -81,6 +82,10 @@ const Home = () => {
 					<p className='section_desc'>Who are we? Why choose us?</p>
 				</div>
 				<div className='text'>
+					<em>
+						"We build relationships, not customers, That's why our customers
+						keep coming back to us."
+					</em>
 					<p>
 						Al Kayam Traders is active in the trading business for 5 years and
 						we our client base is spread across the world including India, USA,

@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
-// import img1 from '../../public/images/products/fire1.jpeg'
-// import img2 from '../../public/images/products/fire2.jpeg'
+import img1 from '../../public/images/products/pneumatic1.jpeg'
+import img2 from '../../public/images/products/pneumatic2.jpeg'
 
 const FireAndSafety = () => {
 	return (
@@ -17,14 +17,14 @@ const FireAndSafety = () => {
 						valve, Denfoss Air valve, Rig products, Oil tep, Positioner.
 					</p>
 				</div>
-				{/* <ul className='products_list img_products'>
-				<li className='product'>
-				<Image src={img1} />
-				</li>
-				<li className='product'>
-				<Image src={img2} />
-				</li>
-			</ul> */}
+				<ul className='products_list img_products'>
+					<li className='product'>
+						<Image src={img1} />
+					</li>
+					<li className='product'>
+						<Image src={img2} />
+					</li>
+				</ul>
 			</section>
 		</>
 	)
