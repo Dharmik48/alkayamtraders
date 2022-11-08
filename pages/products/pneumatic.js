@@ -19,10 +19,10 @@ const FireAndSafety = () => {
 				</div>
 				<ul className='products_list img_products'>
 					<li className='product'>
-						<Image src={img1} />
+						<Image src={img1} alt='Pneumatic products' />
 					</li>
 					<li className='product'>
-						<Image src={img2} />
+						<Image src={img2} alt='Pneumatic products' />
 					</li>
 				</ul>
 			</section>

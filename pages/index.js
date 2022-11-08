@@ -83,8 +83,8 @@ const Home = () => {
 				</div>
 				<div className='text'>
 					<em>
-						"We build relationships, not customers, That's why our customers
-						keep coming back to us."
+						&ldquo;We build relationships, not customers, That&apos;s why our
+						customers keep coming back to us.&rdquo;
 					</em>
 					<p>
 						Al Kayam Traders is active in the trading business for 5 years and
