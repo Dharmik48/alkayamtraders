@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto+Slab:wght@600;700&display=swap');
 
 :root {
-	--clr-dark: #0f172a;
 	--clr-white: #f8fafc;
+	--clr-dark: #1b1d1e;
 	--clr-brand: #3b82f6;
-	--clr-grey: #cbd5e1;
+	--clr-grey: #3d4144;
 	--ff-poppins: 'Poppins', sans-serif;
 	--ff-roboto: 'Roboto Slab', serif;
 }
@@ -18,8 +18,8 @@ body {
 	padding: 0;
 	margin: 0;
 	font-family: var(--ff-poppins);
-	color: var(--clr-dark);
-	background-color: var(--clr-white);
+	color: var(--clr-white);
+	background-color: var(--clr-dark);
 }
 
 h1,
@@ -76,8 +76,8 @@ header {
 	max-height: 10vh;
 	position: sticky;
 	top: 0;
-	background-color: var(--clr-white);
-	box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.04);
+	background-color: var(--clr-dark);
+	box-shadow: 0px 15px 20px rgba(15, 16, 16, 0.04);
 	z-index: 2;
 	padding: 1rem 10%;
 }
@@ -161,7 +161,7 @@ nav > ul > li:hover {
 		padding: 0;
 		width: auto;
 		font-size: 0.8em;
-		background-color: var(--clr-white);
+		background-color: var(--clr-dark);
 		opacity: 1;
 		transform: unset;
 	}
@@ -354,9 +354,14 @@ nav > ul > li:hover {
 	overflow: hidden;
 }
 
-.products_list > .product > img {
+.products_list > .product img {
 	border-radius: 0.75em;
 	width: 100%;
+	transition: scale 150ms;
+}
+
+.products_list > .product img:hover {
+	scale: 0.95;
 }
 
 .product h3 {
@@ -364,7 +369,7 @@ nav > ul > li:hover {
 	font-weight: 500;
 }
 
-.product a {
+.product div > a {
 	color: var(--clr-brand);
 	font-size: 0.85rem;
 	border-bottom: 2px solid transparent;
@@ -437,7 +442,7 @@ nav > ul > li:hover {
 /* ---CONTACT US--- */
 .contact > .details {
 	color: var(--clr-white);
-	background-color: var(--clr-dark);
+	background-color: var(--clr-brand);
 	border-radius: 0.75rem;
 	padding: 2.5em;
 }
@@ -576,7 +581,7 @@ footer ul a {
 	transition: border-color 150ms;
 }
 footer ul a:hover {
-	border-color: var(--clr-dark);
+	border-color: var(--clr-white);
 }
 
 @media screen and (min-width: 468px) {

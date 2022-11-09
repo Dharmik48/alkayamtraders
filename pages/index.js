@@ -40,35 +40,45 @@ const Home = () => {
 				</div>
 				<ul className='products_list'>
 					<li className='product'>
-						<Image src={fireImg} alt='Fire and safety products' />
+						<Link href='/products/fire-and-safety'>
+							<Image src={fireImg} alt='Fire and safety products' />
+						</Link>
 						<div>
 							<h3>Marine fair & safety</h3>
 							<Link href={'/products/fire-and-safety'}>View More</Link>
 						</div>
 					</li>
 					<li className='product'>
-						<Image src={engineeImg} alt='Engine products' />
+						<Link href='/products/engine'>
+							<Image src={engineeImg} alt='Engine products' />
+						</Link>
 						<div>
 							<h3>Marine engine and spare</h3>
 							<Link href={'/products/engine'}>View More</Link>
 						</div>
 					</li>
 					<li className='product'>
-						<Image src={autoImg} alt='Automation products' />
+						<Link href='/products/automation'>
+							<Image src={autoImg} alt='Automation products' />
+						</Link>
 						<div>
 							<h3>Marine automation</h3>
 							<Link href={'/products/automation'}>View More</Link>
 						</div>
 					</li>
 					<li className='product'>
-						<Image src={pneumaticImg} alt='Pneumatic products' />
+						<Link href='/products/pneumatic'>
+							<Image src={pneumaticImg} alt='Pneumatic products' />
+						</Link>
 						<div>
 							<h3>Marine pneumatic</h3>
 							<Link href={'/products/pneumatic'}>View More</Link>
 						</div>
 					</li>
 					<li className='product'>
-						<Image src={hydraulicImg} alt='hydraulic pump and motors' />
+						<Link href='/products/pump-and-motor'>
+							<Image src={hydraulicImg} alt='hydraulic pump and motors' />
+						</Link>
 						<div>
 							<h3>Marine hydraulic pump & motor</h3>
 							<Link href={'/products/pump-and-motor'}>View More</Link>
@@ -127,7 +137,11 @@ const Home = () => {
 							</div>
 							<div className='detail mail'>
 								<FaEnvelope />
-								<p>alkayamtraders92@gmail.com</p>
+								<p>
+									<Link href='mailto:alkayamtraders92@gmail.com'>
+										alkayamtraders92@gmail.com
+									</Link>
+								</p>
 							</div>
 							<div className='detail address'>
 								<FaMapMarkerAlt />
