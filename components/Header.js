@@ -43,7 +43,13 @@ const Header = () => {
 		<header>
 			<div>
 				<img src='../images/logo.png' alt='logo' />
-				<h1>Al Kayam Traders</h1>
+				<h1>
+					{router.route.includes('/products') ? (
+						<Link href={'/#hero'}>Al Kayam Traders</Link>
+					) : (
+						<a href='#hero'>Al Kayam Traders</a>
+					)}
+				</h1>
 			</div>
 			<nav>
 				{isNavOpen ? (

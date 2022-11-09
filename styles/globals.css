@@ -360,7 +360,7 @@ nav > ul > li:hover {
 	transition: scale 150ms;
 }
 
-.products_list > .product img:hover {
+.products_list > .product a > img:hover {
 	scale: 0.95;
 }
 
@@ -576,11 +576,11 @@ footer ul {
 .heading > p {
 	font-size: 0.8rem;
 }
-footer ul a {
+footer ul.company a {
 	border-bottom: 2px solid transparent;
 	transition: border-color 150ms;
 }
-footer ul a:hover {
+footer ul.company a:hover {
 	border-color: var(--clr-white);
 }
 
@@ -627,7 +627,5 @@ footer ul a:hover {
 	background-color: transparent;
 }
 .img_products > li > img {
-	/* background-color: transparent; */
-	/* box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1); */
 	border: 1px solid var(--clr-grey);
 }

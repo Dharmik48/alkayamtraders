@@ -48,7 +48,9 @@ const Footer = () => {
 					</li>
 					<li>
 						<FaEnvelope />
-						<p>alkayamtraders92@gmail.com</p>
+						<Link href={'mailto:alkayamtraders92@gmail.com'}>
+							<p>alkayamtraders92@gmail.com</p>
+						</Link>
 					</li>
 					<li>
 						<FaMapMarkerAlt />
