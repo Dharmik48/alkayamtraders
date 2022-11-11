@@ -2,7 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import fireImg from '../public/images/products/fire/fire7.jpg'
 import autoImg from '../public/images/products/automation/auto1.jpg'
-// import engineeImg from '../public/images/products/engine1.jpg'
+import engineeImg from '../public/images/products/engine/engine1.jpeg'
 import pneumaticImg from '../public/images/products/pneumatic/pneumatic4.jpg'
 import hydraulicImg from '../public/images/products/hydraulic/hydraulic3.jpg'
 import {
@@ -58,15 +58,6 @@ const Home = () => {
 						</div>
 					</li>
 
-					{/* <li className='product'>
-						<Link href='/products/engine'>
-							<Image src={engineeImg} alt='Engine products' />
-						</Link>
-						<div>
-							<h3>Marine engine and spare</h3>
-							<Link href={'/products/engine'}>View More</Link>
-						</div>
-					</li> */}
 					<li className='product'>
 						<Link href='/products/automation'>
 							<Image src={autoImg} alt='Automation products' />
@@ -83,6 +74,15 @@ const Home = () => {
 						<div>
 							<h3>Marine fair & safety</h3>
 							<Link href={'/products/fire-and-safety'}>View More</Link>
+						</div>
+					</li>
+					<li className='product'>
+						<Link href='/products/engine'>
+							<Image src={engineeImg} alt='Engine products' />
+						</Link>
+						<div>
+							<h3>Marine engine and spare</h3>
+							<Link href={'/products/engine'}>View More</Link>
 						</div>
 					</li>
 				</ul>

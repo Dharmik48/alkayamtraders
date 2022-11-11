@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import img1 from '../../public/images/products/engine1.jpeg'
-import img2 from '../../public/images/products/engine2.jpeg'
+import img1 from '../../public/images/products/engine/engine1.jpeg'
+import img2 from '../../public/images/products/engine/engine2.jpeg'
 
 const FireAndSafety = () => {
 	return (
