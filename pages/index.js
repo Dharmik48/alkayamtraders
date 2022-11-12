@@ -72,7 +72,7 @@ const Home = () => {
 							<Image src={fireImg} alt='Fire and safety products' />
 						</Link>
 						<div>
-							<h3>Marine fair & safety</h3>
+							<h3>Marine fire & safety</h3>
 							<Link href={'/products/fire-and-safety'}>View More</Link>
 						</div>
 					</li>
@@ -157,10 +157,10 @@ const Home = () => {
 								href='https://www.instagram.com/marinemarket_/'
 								target='_blank'
 							>
-								<FaInstagram />
+								<FaInstagram size={'1.5em'} />
 							</Link>
 							<Link href={'https://wa.me/919409701340'} target='_blank'>
-								<FaWhatsapp />
+								<FaWhatsapp size={'1.5em'} />
 							</Link>
 						</div>
 					</div>
