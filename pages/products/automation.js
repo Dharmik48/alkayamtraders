@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Head from 'next/head'
 import img1 from '../../public/images/products/automation/auto1.jpg'
-// import img2 from '../../public/images/products/auto2.jpeg'
+import img2 from '../../public/images/products/automation/auto2.jpeg'
 
 const Automation = () => {
 	return (
@@ -21,9 +21,9 @@ const Automation = () => {
 					<li className='product'>
 						<Image src={img1} alt='Automation products' />
 					</li>
-					{/* <li className='product'>
+					<li className='product'>
 						<Image src={img2} alt='Automation products' />
-					</li> */}
+					</li>
 				</ul>
 			</section>
 		</>

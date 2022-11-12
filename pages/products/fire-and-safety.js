@@ -8,6 +8,7 @@ import img5 from '../../public/images/products/fire/fire5.jpg'
 import img6 from '../../public/images/products/fire/fire6.jpg'
 import img7 from '../../public/images/products/fire/fire7.jpg'
 import img8 from '../../public/images/products/fire/fire8.jpeg'
+import img9 from '../../public/images/products/fire/fire9.jpeg'
 
 const FireAndSafety = () => {
 	return (
@@ -48,6 +49,9 @@ const FireAndSafety = () => {
 					</li>
 					<li className='product'>
 						<Image src={img1} alt='Fire and safety products' />
+					</li>
+					<li className='product'>
+						<Image src={img9} alt='Fire and safety products' />
 					</li>
 				</ul>
 			</section>

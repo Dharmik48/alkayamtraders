@@ -4,6 +4,7 @@ import img1 from '../../public/images/products/pneumatic/pneumatic1.jpg'
 import img2 from '../../public/images/products/pneumatic/pneumatic2.jpg'
 import img3 from '../../public/images/products/pneumatic/pneumatic3.jpg'
 import img4 from '../../public/images/products/pneumatic/pneumatic4.jpg'
+import img5 from '../../public/images/products/pneumatic/pneumatic5.jpeg'
 
 const FireAndSafety = () => {
 	return (
@@ -27,10 +28,13 @@ const FireAndSafety = () => {
 						<Image src={img2} alt='Pneumatic products' />
 					</li>
 					<li className='product'>
-						<Image src={img3} alt='Pneumatic products' />
+						<Image src={img5} alt='Pneumatic products' />
 					</li>
 					<li className='product'>
 						<Image src={img4} alt='Pneumatic products' />
+					</li>
+					<li className='product'>
+						<Image src={img3} alt='Pneumatic products' />
 					</li>
 				</ul>
 			</section>
