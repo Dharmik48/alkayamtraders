@@ -1,9 +1,9 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import fireImg from '../public/images/products/fire/fire7.jpg'
-import autoImg from '../public/images/products/automation/auto1.jpg'
+import fireImg from '../public/images/products/fire/cover.jpg'
+import autoImg from '../public/images/products/automation/cover.jpg'
 import engineeImg from '../public/images/products/engine/engine1.jpeg'
-import pneumaticImg from '../public/images/products/pneumatic/pneumatic4.jpg'
+import pneumaticImg from '../public/images/products/pneumatic/cover.jpg'
 import hydraulicImg from '../public/images/products/hydraulic/hydraulic3.jpg'
 import {
 	FaPhoneAlt,
