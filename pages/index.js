@@ -4,7 +4,7 @@ import fireImg from '../public/images/products/fire/cover.jpg'
 import autoImg from '../public/images/products/automation/cover.jpg'
 import engineeImg from '../public/images/products/engine/engine1.jpeg'
 import pneumaticImg from '../public/images/products/pneumatic/cover.jpg'
-import hydraulicImg from '../public/images/products/hydraulic/hydraulic3.jpg'
+import hydraulicImg from '../public/images/products/hydraulic/cover.jpg'
 import {
 	FaPhoneAlt,
 	FaEnvelope,
