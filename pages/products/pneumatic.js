@@ -2,9 +2,13 @@ import Head from 'next/head'
 import Image from 'next/image'
 import img1 from '../../public/images/products/pneumatic/pneumatic1.jpg'
 import img2 from '../../public/images/products/pneumatic/pneumatic2.jpg'
-import img3 from '../../public/images/products/pneumatic/pneumatic3.jpg'
+import img3 from '../../public/images/products/pneumatic/pneumatic3.jpeg'
 import img4 from '../../public/images/products/pneumatic/pneumatic4.jpg'
 import img5 from '../../public/images/products/pneumatic/pneumatic5.jpeg'
+import img6 from '../../public/images/products/pneumatic/pneumatic6.jpeg'
+import img7 from '../../public/images/products/pneumatic/pneumatic7.jpeg'
+import img8 from '../../public/images/products/pneumatic/pneumatic8.jpeg'
+import img9 from '../../public/images/products/pneumatic/pneumatic9.jpeg'
 
 const FireAndSafety = () => {
 	return (
@@ -35,6 +39,18 @@ const FireAndSafety = () => {
 					</li>
 					<li className='product'>
 						<Image src={img3} alt='Pneumatic products' />
+					</li>
+					<li className='product'>
+						<Image src={img6} alt='Pneumatic products' />
+					</li>
+					<li className='product'>
+						<Image src={img7} alt='Pneumatic products' />
+					</li>
+					<li className='product'>
+						<Image src={img8} alt='Pneumatic products' />
+					</li>
+					<li className='product'>
+						<Image src={img9} alt='Pneumatic products' />
 					</li>
 				</ul>
 			</section>
