@@ -139,8 +139,8 @@ const Home = () => {
 							<div className='detail mail'>
 								<FaEnvelope />
 								<p>
-									<Link href='mailto:alkayamtraders92@gmail.com'>
-										alkayamtraders92@gmail.com
+									<Link href='mailto:info@alkayamtraders.org'>
+										info@alkayamtraders.org
 									</Link>
 								</p>
 							</div>

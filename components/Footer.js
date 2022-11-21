@@ -48,8 +48,8 @@ const Footer = () => {
 					</li>
 					<li>
 						<FaEnvelope />
-						<Link href={'mailto:alkayamtraders92@gmail.com'}>
-							<p>alkayamtraders92@gmail.com</p>
+						<Link href={'mailto:info@alkayamtraders.org'}>
+							<p>info@alkayamtraders.org</p>
 						</Link>
 					</li>
 					<li>
