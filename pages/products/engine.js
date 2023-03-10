@@ -1,13 +1,25 @@
 import Head from 'next/head'
-import Image from 'next/image'
-import img1 from '../../public/images/products/engine/engine1.jpeg'
-import img2 from '../../public/images/products/engine/engine2.jpeg'
-import img3 from '../../public/images/products/engine/engine3.jpeg'
-import img4 from '../../public/images/products/engine/engine4.jpeg'
-import img5 from '../../public/images/products/engine/engine5.jpeg'
-import img6 from '../../public/images/products/engine/engine6.jpeg'
+import { useState, useEffect } from 'react'
 
 const FireAndSafety = () => {
+	const importAll = r => {
+		return r.keys().map(r)
+	}
+
+	const [listOfImages, setListOfImages] = useState([])
+
+	useEffect(() => {
+		setListOfImages(
+			importAll(
+				require.context(
+					'../../public/images/products/engine/',
+					false,
+					/\.(png|jpe?g|svg)$/
+				)
+			)
+		)
+	}, [])
+
 	return (
 		<>
 			<Head>
@@ -23,24 +35,15 @@ const FireAndSafety = () => {
 					</p>
 				</div>
 				<ul className='products_list img_products'>
-					<li className='product'>
-						<Image src={img1} alt='Engine and Spare' />
-					</li>
-					<li className='product'>
-						<Image src={img2} alt='Engine and Spare' />
-					</li>
-					<li className='product'>
-						<Image src={img3} alt='Engine and Spare' />
-					</li>
-					<li className='product'>
-						<Image src={img4} alt='Engine and Spare' />
-					</li>
-					<li className='product'>
-						<Image src={img5} alt='Engine and Spare' />
-					</li>
-					<li className='product'>
-						<Image src={img6} alt='Engine and Spare' />
-					</li>
+					{listOfImages.map((image, index) => (
+						<li className='product' key={index}>
+							<img
+								loading='lazy'
+								src={image.default.src}
+								alt='Engine products'
+							/>
+						</li>
+					))}
 				</ul>
 			</section>
 		</>
