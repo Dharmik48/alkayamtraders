@@ -6,12 +6,14 @@ import engineeImg from '../public/images/products/engine/engine1.jpeg'
 import pneumaticImg from '../public/images/products/pneumatic/cover.jpg'
 import hydraulicImg from '../public/images/products/hydraulic/cover.jpg'
 import ebay from '../public/images/ebay.jpg'
+import amazon from '../public/images/amazon.jpeg'
 import {
 	FaPhoneAlt,
 	FaEnvelope,
 	FaMapMarkerAlt,
 	FaInstagram,
 	FaWhatsapp,
+	FaAmazon,
 } from 'react-icons/fa'
 
 const Home = () => {
@@ -164,16 +166,30 @@ const Home = () => {
 								<FaWhatsapp size={'1.5em'} />
 							</Link>
 						</div>
-						<Link
-							target={'_blank'}
-							href='https://www.ebay.com/str/alkayamsstore?mkcid=16&mkevt=1&mkrid=711-127632-2357-0&ssspo=h3osvuz9spq&sssrc=3418065&ssuid=h3osvuz9spq&widget_ver=artemis&media=WHATS_APP'
-						>
-							<Image
-								src={ebay}
-								className='ebay'
-								alt='click to go to our ebay store'
-							/>
-						</Link>
+						<div className='stores'>
+							<Link
+								href={
+									'https://www.amazon.in/s?ie=UTF8&marketplaceID=A21TJRUUN4KGV&me=A3A5N3VON6YFI6'
+								}
+								target='_blank'
+							>
+								<Image
+									src={amazon}
+									className='amazon'
+									alt='click to go to our amazon store'
+								/>
+							</Link>
+							<Link
+								target={'_blank'}
+								href='https://www.ebay.com/str/alkayamsstore?mkcid=16&mkevt=1&mkrid=711-127632-2357-0&ssspo=h3osvuz9spq&sssrc=3418065&ssuid=h3osvuz9spq&widget_ver=artemis&media=WHATS_APP'
+							>
+								<Image
+									src={ebay}
+									className='ebay'
+									alt='click to go to our ebay store'
+								/>
+							</Link>
+						</div>
 					</div>
 				</div>
 			</section>

@@ -383,9 +383,22 @@ nav > ul > li:hover {
 	border-color: var(--clr-brand);
 }
 
-.ebay {
+.ebay,
+.amazon {
 	width: 250px;
 	height: auto;
+}
+
+.stores {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+
+@media screen and (width>828px) {
+	.stores {
+		flex-direction: row;
+	}
 }
 
 @media screen and (min-width: 612px) {
@@ -492,7 +505,7 @@ nav > ul > li:hover {
 	translate: 0 25%;
 }
 
-.socials a:first-child {
+.socials a:not(:last-child) {
 	margin-right: 1.15em;
 }
 
